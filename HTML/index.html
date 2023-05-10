@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
     <title>Segunda Guerra Mundial</title>
 </head>
 <body>
     <header>
         <h1>La segunda guerra mundial</h1>
         <nav>
-            <ul>
-                <li><a href="#seccion">Inicio</a></li>
-                <li><a href="#seccion">Historias</a></li>
-                <li><a href="#seccion">Suscribirse</a></li>
-                <li><a href="#seccion">Contacto</a></li>
-            </ul>
+            
+                <a href="#seccion">Inicio</a>
+                <a href="#seccion">Historias</a>
+                <a href="#seccion">Suscribirse</a>
+                <a href="#seccion">Contacto</a>
+            
         </nav>
     </header>
     <main>
-        <section>
+        <section class="historias">
             <h2>Algunas historias</h2>
 
             <article>
@@ -32,28 +33,28 @@
             <article>
                 <h4>La bestia negra de Omaha Beach</h4>
                 <picture>
-                    <img src="/img/heinrich.jpg" alt="fight">
+                    <img src="/img/omaha.webp" alt="fight">
                 </picture>
                 <p>Severloh era artillero en una posición fortificada en la cima de una colina que dominaba la playa de Omaha, conocida como WN-62. Desde allí, tuvo una vista privilegiada de la playa y fue capaz de disparar contra los soldados aliados que desembarcaban en la playa.
 
                 Severloh afirmó haber disparado más de 12.000 rondas de ametralladora ese día, y aunque se desconoce el número exacto de víctimas que causó, su fuego fue sin duda uno de los muchos que contribuyeron a la alta tasa de bajas entre los soldados aliados.</p>
             </article>
         </section>
-        <section>
+        <section class="suscribirse">
             <h2>Suscribirse</h2>
             <form action="#" method="post">
-            <label for=""></label>
-
+            <input type="email" id="email" name="email" placeholder="Email"/>
+            <label for="email"><button type="submit">Enviar</button></label>
+            
             </form>
         </section>
-        <section>
-            <h2>Si tienes alguna duda, sugerencia o quieres compartir alguna noticia con nosotros, no dudes en ponerte en contacto con nosotros a través del siguiente formulario:</h2>
-            <form action="#" method="post">
-                <input type="text">
-                <label for="text">Correo</label>
-                
-            </form>
-        </section>
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>Estamos ubicados en: Av. Ejemplo #1234, Ciudad de Ejemplo.</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Correo electrónico: ejemplo@ejemplo.com</p>
+          </section>
+          
     </main>
     <footer>
         Todos los derechos reservados
