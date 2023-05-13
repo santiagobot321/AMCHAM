@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="/img/sombrero-militar.png" type="image/x-icon">
     <title>Segunda Guerra Mundial</title>
 </head>
 <body>
@@ -12,25 +13,31 @@
         <h1>La segunda guerra mundial</h1>
         <nav>
             
-                <a href="#seccion">Inicio</a>
-                <a href="#seccion">Historias</a>
-                <a href="#seccion">Suscribirse</a>
-                <a href="#seccion">Contacto</a>
+                <a href="#inicio">Inicio</a>
+                <a href="#historias">Historias</a>
+                <a href="#suscribirse">Suscribirse</a>
+                <a href="#contacto">Contacto</a>
             
         </nav>
     </header>
     <main>
-        <section class="historias">
+        <section class="historias" id="historias">
             <h2>Algunas historias</h2>
 
-            <article>
+            <article class="historiaart">
                 <h4>Rattenkrieg (Guerra de ratas)</h4>
                 <picture>
                     <img src="/img/rattenkrieg.jpg" alt="fight">
                 </picture>
-                <p>Después de que los alemanes tomaran el control de gran parte de la ciudad, se encontraron enfrentando la resistencia feroz de los soldados soviéticos y civiles, que se habían escondido en los edificios y alcantarillas de la ciudad. Las luchas de guerrilla y la lucha en los espacios reducidos y confinados hicieron que la batalla fuera especialmente brutal y sangrienta.</p>
+                <p>Después de que los alemanes tomaran el control de gran parte de la ciudad, se encontraron enfrentando la resistencia feroz de los soldados soviéticos y civiles, que se habían escondido en los edificios y alcantarillas de la ciudad. Las luchas de guerrilla y la lucha en los espacios reducidos y confinados hicieron que la batalla fuera especialmente brutal y sangrienta. 
+                
+                Los soldados alemanes se encontraron luchando en condiciones extremadamente difíciles, con enfrentamientos cuerpo a cuerpo, trampas explosivas y francotiradores que disparaban desde ventanas y techos. A menudo, los edificios eran tomados por uno u otro bando y se libraba una lucha intensa para su control.
+
+                La Rattenkrieg fue una de las características más terribles y mortales de la Batalla de Stalingrado, con bajas masivas de ambos lados. La brutalidad y la dificultad de la lucha callejera en Stalingrado se convirtieron en una pesadilla para los soldados alemanes, y la resistencia soviética en la ciudad contribuyó en gran medida a la victoria final del Ejército Rojo en la batalla.
+                </p>
             </article>
-            <article>
+            <hr>
+            <article class="historiaart">
                 <h4>La bestia negra de Omaha Beach</h4>
                 <picture>
                     <img src="/img/omaha.webp" alt="fight">
@@ -39,25 +46,62 @@
 
                 Severloh afirmó haber disparado más de 12.000 rondas de ametralladora ese día, y aunque se desconoce el número exacto de víctimas que causó, su fuego fue sin duda uno de los muchos que contribuyeron a la alta tasa de bajas entre los soldados aliados.</p>
             </article>
+            
+            <hr> 
+            <article class="historiaart">
+                <h4>El soldado más leal</h4>
+                <picture>
+                    <img src="/img/Onoda.jpg" alt="fight">
+                </picture>
+                <p>
+                    Onoda nació en 1922 en la isla de Honshu, Japón, y se unió al ejército japonés en 1942, a la edad de 20 años. Fue entrenado como oficial de inteligencia y fue enviado a las Filipinas en 1944.
+
+                    En febrero de 1945, cuando los Aliados comenzaron su avance hacia Japón, Onoda y otros tres soldados fueron enviados a la isla de Lubang en las Filipinas para realizar tareas de sabotaje y espionaje contra las fuerzas aliadas. Allí, establecieron una base en la selva y se escondieron, esperando órdenes.
+
+                    Después de que la guerra terminara en agosto de 1945, los otros tres soldados murieron o se rindieron, pero Onoda y otro soldado, Kozuka Shoichi, continuaron escondiéndose en la selva y luchando contra los "enemigos" que creían que aún estaban allí.
+
+                    Durante los siguientes 28 años, Onoda y Kozuka sobrevivieron cazando y cultivando sus propios alimentos, y evitando el contacto con la población local. A pesar de los esfuerzos de la familia de Kozuka y las autoridades japonesas para convencer a Onoda de que se rindiera, se negó a hacerlo porque nunca había recibido una orden de sus superiores para hacerlo.
+
+                    Finalmente, en 1974, Onoda fue encontrado por un estudiante japonés llamado Norio Suzuki, quien estaba en busca de "el soldado que nunca se rindió". Después de una serie de negociaciones, Onoda finalmente aceptó rendirse a las autoridades filipinas y entregó su rifle, su espada y sus municiones. Regresó a Japón como un héroe nacional, donde se le permitió reintegrarse a la sociedad y comenzar una nueva vida.
+                </p>
+            </article>
         </section>
-        <section class="suscribirse">
+        <section class="suscribirse" id="suscribirse">
             <h2>Suscribirse</h2>
             <form action="#" method="post">
-            <input type="email" id="email" name="email" placeholder="Email"/>
-            <label for="email"><button type="submit">Enviar</button></label>
-            
+                <fieldset>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+                    <label for="nombre">Nombre</label>
+                </fieldset>
+                <fieldset>
+                    <input type="text" id="nombre" name="nombre" placeholder="Apellido"/>
+                    <label for="nombre">Apellido</label>
+                </fieldset>
+                <fieldset>
+                    <input type="email" id="email" name="email" placeholder="alguien@ejemplo.com"/>
+                    <label for="email">Email</label>                    
+                </fieldset>
+                <fieldset>
+                    <h3>¿Con qué frecuencia desea recibir actualizaciones?</h3>
+                    <input type="radio" id="opt-1" value="1" name="opt" />
+                    <label for="opt-1">Mensualmente</label>
+                    <input type="radio" id="opt-2" value="2" name="opt" />
+                    <label for="opt-2">Trimestralmente</label>
+                  </fieldset>
+                <button type="submit">Enviar</button>
+
             </form>
         </section>
         <section id="contacto">
             <h2>Contáctanos</h2>
-            <p>Estamos ubicados en: Av. Ejemplo #1234, Ciudad de Ejemplo.</p>
-            <p>Teléfono: (123) 456-7890</p>
-            <p>Correo electrónico: ejemplo@ejemplo.com</p>
+            <p><b>Estamos ubicados en:</b> Av. 57 #107</p>
+            <p><b>Teléfono:</b> (123) 456-7890</p>
+            <p><b>Correo electrónico:</b> SeGueMund@gmail.com</p>
           </section>
           
     </main>
     <footer>
-        Todos los derechos reservados
+        Todos los derechos reservados &copy
     </footer>
 </body>
 </html>
